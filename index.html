@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="menu">
+            <div class="logo">
+                <h1>ShopSmart</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#tab1" class="tab-link">Electronics</a></li>
+                    <li><a href="#tab2" class="tab-link">Clothing</a></li>
+                    <li><a href="#tab3" class="tab-link">Home Appliances</a></li>
+                    <li><a href="#tab4" class="tab-link">Books</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="tabs">
+            <div id="tab1" class="tab active" onclick="openTab(event, 'content1')">Electronics</div>
+            <div id="tab2" class="tab" onclick="openTab(event, 'content2')">Clothing</div>
+            <div id="tab3" class="tab" onclick="openTab(event, 'content3')">Home Appliances</div>
+            <div id="tab4" class="tab" onclick="openTab(event, 'content4')">Books</div>
+        </div>
+
+        <div class="tab-content">
+            <div id="content1" class="tab-pane active">
+                <h2>Electronics</h2>
+                <button class="accordion">Smartphones</button>
+                <div class="accordion-content">
+                    <p>Latest smartphones available with amazing discounts!</p>
+                </div>
+                <button class="accordion">Laptops</button>
+                <div class="accordion-content">
+                    <p>High-performance laptops for work and gaming.</p>
+                </div>
+            </div>
+            <div id="content2" class="tab-pane">
+                <h2>Clothing</h2>
+                <button class="accordion">Men's Wear</button>
+                <div class="accordion-content">
+                    <p>Trendy outfits for men at unbeatable prices.</p>
+                </div>
+                <button class="accordion">Women's Wear</button>
+                <div class="accordion-content">
+                    <p>Stylish clothing for women with exclusive deals.</p>
+                </div>
+            </div>
+            <div id="content3" class="tab-pane">
+                <h2>Home Appliances</h2>
+                <button class="accordion">Kitchen Appliances</button>
+                <div class="accordion-content">
+                    <p>Upgrade your kitchen with modern gadgets and appliances.</p>
+                </div>
+                <button class="accordion">Washing Machines</button>
+                <div class="accordion-content">
+                    <p>Choose from a wide range of washing machines for every budget.</p>
+                </div>
+            </div>
+            <div id="content4" class="tab-pane">
+                <h2>Books</h2>
+                <button class="accordion">Fiction</button>
+                <div class="accordion-content">
+                    <p>Discover the best fiction novels and new releases.</p>
+                </div>
+                <button class="accordion">Non-Fiction</button>
+                <div class="accordion-content">
+                    <p>Explore top-rated non-fiction books on various topics.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 ShopSmart. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
